@@ -34,8 +34,8 @@ const Register = () => {
         }finally {
             setLoading(false)
         };
-        
-        
+
+
     }
   return (
     <>
@@ -54,7 +54,7 @@ const Register = () => {
                     <div className='mb-3'>
                     <input type="password" className='form-control ' placeholder='Set password' value={password} onChange={(e) => setPassword(e.target.value)} />
                     <small>{errors.password && <div className='text-danger'>{errors.password}</div>}</small>
-                    </div>    
+                    </div>
                     {success && <div className='alert alert-success'>Registration Successful</div>}
                     {loading ? (
                       <button type='submit' className='btn btn-info d-block mx-auto' disabled><FontAwesomeIcon icon={faSpinner} spin /> Please wait...</button>
